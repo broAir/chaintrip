@@ -1,0 +1,42 @@
+/*// Glow Border Animation //*/
+
+.bright-border {
+    box-shadow: -5px 0 10px gold, 10px 0 10px #0ff, 0 0 10px #fff;
+    border-radius: 12.5px;
+
+}
+
+.glow-border {
+    box-shadow: -5px 0 10px gold, 10px 0 10px #0ff, 0 0 10px #fff;
+    border-color: gold;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 12.5px;
+    animation: borderAnimate 5s infinite;
+
+}
+
+.glow-my {
+    box-shadow: -5px 0 10px #0ff, 10px 0 10px #f0f, 0 0 10px #fff;
+    border-radius: 12.5px;
+}
+
+.hue-rotate {
+    filter: hue-rotate(0deg);
+    animation: hueAnimate 2s infinite;
+}
+
+@keyframes hueAnimate {
+    50% {
+        filter: hue-rotate(20deg) saturate(200%);
+    }
+}
+
+@keyframes borderAnimate {
+    50% {
+        box-shadow: -5px 0 10px #0ff, 10px 0 10px #f0f, 0 0 10px #fff;
+        border-color: #f0f;
+    }
+}
+
+/*// Border Animation END//*/
